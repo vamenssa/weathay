@@ -61,4 +61,15 @@ main {
           justify-content: center;
   cursor: pointer;
 }
+
+.temperature-zone span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+hr {
+  margin-bottom: 20px;
+  border: 1px solid #dcdcdc;
+}
 /*# sourceMappingURL=styles.css.map */

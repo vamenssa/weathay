@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "manjari, open sans, helvetica, tahoma, sans serif";
+    line-height: 1.5rem;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manjari";
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    .date-time{
+        display: flex;
+        
+        justify-content: space-between;
+    }
+}
+.city-temperature{
+    height: 10vh;
+    .temperature{
+        display:flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+

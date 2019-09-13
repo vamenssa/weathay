@@ -52,7 +52,7 @@ main {
   height: 10vh;
 }
 
-.city-temperature .temperature {
+.city-temperature .temperature-zone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

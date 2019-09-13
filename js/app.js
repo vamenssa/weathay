@@ -4,8 +4,9 @@ window.addEventListener("load", () =>{
     let locationDay = document.querySelector(".location-day");
     let locationTime = document.querySelector(".location-time");
     let temperatureDegree = document.querySelector(".temperature-degree");
-    let temperatureSpan = document.querySelector(".temperature span");
+    let temperatureSpan = document.querySelector(".temperature-zone span");
     let tempDescription = document.querySelector(".temperature-description");
+    let temperatureZone = document.querySelector(".temperature-zone");
     let lat;
     let long;
 
@@ -35,6 +36,21 @@ window.addEventListener("load", () =>{
 
 
                 setWeatherIcon(icon, document.querySelector(".icon"));
+
+                //convet temperature
+                //API gives temperature unit as fahrenheit
+                let degreeCelsius = (temperature - 32) * (5 / 9);
+
+                temperatureZone.addEventListener("click", () =>{
+                    if(temperatureSpan.textContent === "F"){
+                        temperatureSpan.textContent = "C";
+                        temperatureDegree.textContent = Math.floor(degreeCelsius);
+                    }else{
+                        temperatureSpan.textContent = "F";
+                        temperatureDegree.textContent = temperature;
+                    }
+                });
+
             })
         })
     }

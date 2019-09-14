@@ -14,23 +14,41 @@ main{
     justify-content: center;
     align-items: center;
     font-family: "Manjari";
+    background: url(/images/background.jpeg) no-repeat center center;
+    background-size: cover;
 }
 .location{
     display: flex;
     flex-direction: column;
     height: 20vh;
+    margin-bottom: -30px;
+    .city-zone{
+        color: #fff;
+        letter-spacing:0.2rem;
+    }
     .date-time{
         display: flex;
-        
+        color: #fff;
         justify-content: space-between;
+        
     }
 }
 .city-temperature{
     height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .temperature-description{
+        color: #fff;
+    }
     .temperature-zone{
         display:flex;
         justify-content: center;
         cursor: pointer;
+        color: #fff;
+        text-shadow: 2px 2px 4px #fff;
+        
         
     }
 }
@@ -39,9 +57,43 @@ main{
     font-size: 1.4rem;
     font-weight: bold;
     margin-left: 3px;
+    
 }
 
 hr{
+    width: 200px;
     margin-bottom: 20px;
-    border: 1px solid #dcdcdc;;
+    border: 1px solid #d1c6c6;;
+}
+
+.weather-icons{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+
+    
+}
+.weather-icons article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+    .measuring-units{
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .units{
+        // padding: 5px;
+        font-size: 0.8rem;
+        color: #fff;
+
+    }
+}
+.wedIcons{
+    width: 25px;
+    height: 20px;
 }

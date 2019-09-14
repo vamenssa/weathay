@@ -26,6 +26,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Manjari";
+  background: url(/images/background.jpeg) no-repeat center center;
+  background-size: cover;
 }
 
 .location {
@@ -37,12 +39,19 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 20vh;
+  margin-bottom: -30px;
+}
+
+.location .city-zone {
+  color: #fff;
+  letter-spacing: 0.2rem;
 }
 
 .location .date-time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #fff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -50,6 +59,23 @@ main {
 
 .city-temperature {
   height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.city-temperature .temperature-description {
+  color: #fff;
 }
 
 .city-temperature .temperature-zone {
@@ -60,6 +86,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   cursor: pointer;
+  color: #fff;
+  text-shadow: 2px 2px 4px #fff;
 }
 
 .temperature-zone span {
@@ -69,7 +97,50 @@ main {
 }
 
 hr {
+  width: 200px;
   margin-bottom: 20px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #d1c6c6;
+}
+
+.weather-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.weather-icons article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+}
+
+.weather-icons article .measuring-units {
+  font-weight: bold;
+  color: #fff;
+}
+
+.weather-icons article .units {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.wedIcons {
+  width: 25px;
+  height: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

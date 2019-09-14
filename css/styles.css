@@ -8,6 +8,32 @@
 body {
   font-family: "manjari, open sans, helvetica, tahoma, sans serif";
   line-height: 1.5rem;
+  background: url(/images/background.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 40px;
+  margin-bottom: -40px;
+}
+
+header .logo {
+  width: 30px;
+  height: 30px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.9rem;
+  letter-spacing: 0.7rem;
+  font-family: "Chilanka";
+  margin-top: 8px;
 }
 
 main {
@@ -26,8 +52,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Manjari";
-  background: url(/images/background.jpeg) no-repeat center center;
-  background-size: cover;
 }
 
 .location {

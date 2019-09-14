@@ -1,5 +1,4 @@
 window.addEventListener("load", () =>{
-    
     let cityZone = document.querySelector(".city-zone");
     let locationDay = document.querySelector(".location-day");
     let locationTime = document.querySelector(".location-time");

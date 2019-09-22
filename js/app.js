@@ -36,8 +36,8 @@ window.addEventListener("load", () =>{
             long = position.coords.longitude;
 
             //connect to the API
-            const proxy = "https://cors-anywhere.herokuapp.com/";
-            const api = `${proxy}https://api.darksky.net/forecast/e81ae400aa6790b26d99ce873bfff85c/${lat},${long}`;
+            // const proxy = "https://cors-anywhere.herokuapp.com/";
+            const api = `https://api.darksky.net/forecast/e81ae400aa6790b26d99ce873bfff85c/${lat},${long}`;
 
             //talk to api
             fetch(api)
@@ -49,7 +49,7 @@ window.addEventListener("load", () =>{
                 const {temperature, icon, summary, humidity, pressure, windSpeed} = data.currently;
 
                 cityZone.textContent = data.timezone;
-                tempDescription.textContent = summary;
+                tempDescription.textContent = "Weather summary: " + summary;
                 temperatureDegree.textContent = temperature;
                 locationHumidity.textContent = humidity + " %";
                 locationAtmPressure.textContent = pressure + " mb";

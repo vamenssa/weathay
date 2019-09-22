@@ -8,7 +8,7 @@
 body {
   font-family: "manjari, open sans, helvetica, tahoma, sans serif";
   line-height: 1.5rem;
-  background: url(/images/background.jpeg) no-repeat center center;
+  background: url(/images/weather.png) no-repeat center center;
   background-size: cover;
 }
 
